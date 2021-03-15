@@ -47,6 +47,20 @@ int main(void)
 	printf("Length:[%d, %d]\n", len1, len2);
 
 	/**
+	 * Print integer test
+	 */
+	len1 = _printf("Integer:[%i]\n", 7);
+	len2 = printf("Integer:[%i]\n", 7);
+	printf("Length:[%d, %d]\n", len1, len2);
+
+	/**
+	 * Print decimal test
+	 */
+	len1 = _printf("Decimal:[%d]\n", 498);
+	len2 = printf("Decimal:[%d]\n", 498);
+	printf("Length:[%d, %d]\n", len1, len2);
+
+	/**
 	 * Negative number tests
 	 */
 	len1 = _printf("Negative:[%d]\n", -762534);
@@ -54,10 +68,38 @@ int main(void)
 	printf("Length:[%d, %d]\n", len1, len2);
 
 	/**
+	 * Maxsize of int test
+	 */
+	len1 = _printf("INT_MAX:[%i]\n", INT_MAX);
+	len2 = printf("INT_MAX:[%i]\n", INT_MAX);
+	printf("Length:[%d, %d]\n", len1, len2);
+
+	/**
+	 * Minsize of int test
+	 */
+	len1 = _printf("INT_MIN:[%i]\n", INT_MIN);
+	len2 = printf("INT_MIN:[%i]\n", INT_MIN);
+	printf("Length:[%d, %d]\n", len1, len2);
+
+	/**
+	 * Print ASCII value test
+	 */
+	len1 = _printf("ASCII:[%i]\n", 'A');
+	len2 = printf("ASCII:[%i]\n", 'A');
+	printf("Length:[%d, %d]\n", len1, len2);
+
+	/**
 	 * Unsigned number test
 	 */
 	len1 = _printf("Unsigned:[%u]\n", ui);
 	len2 = printf("Unsigned:[%u]\n", ui);
+	printf("Length:[%d, %d]\n", len1, len2);
+
+	/**
+	 * Maxsize of unsigned int test
+	 */
+	len1 = _printf("UINT_MAX:[%u]\n", UINT_MAX);
+	len2 = printf("Unsigned:[%u]\n", UINT_MAX);
 	printf("Length:[%d, %d]\n", len1, len2);
 
 	/**
